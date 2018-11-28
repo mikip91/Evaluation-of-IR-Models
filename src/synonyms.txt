@@ -1,0 +1,96 @@
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+aaafoo => aaabar
+bbbfoo => bbbfoo bbbbar
+cccfoo => cccbar cccbaz
+fooaaa,baraaa,bazaaa
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+MB,mib,megabyte,megabytes
+Television,Televisions,TV,TVs
+Russia,Россия,Russland
+dropped,за,gelöscht
+Ammo,Патроны,Munition,Ammunition,ammo,munition,weapons,missile,ammunition,weaponry,arms,guns,Air Safety Talks,crimes 
+Hezbollah,Хезболла,Hisbollah,mercenaries,#Hezbollah
+Refugee,Беженцев,Flüchtling
+Iranian,Ирана,Iranische
+Greek,Греческий,Griechisch
+campaigns,кампаний,Kampagnen
+Palestinian,Палестинские,Palästinensische
+Flüchtlingskrise,Refugee crisis,Кризис беженцев
+Dresden,Дрезден
+Hezbollah,Hisbollah,Хезболла
+civil,гражданского,bürgerlich
+War,Krieg,война
+тунисских,Tunisian,tunesische
+million,Mio
+Airbnb,Instacart,Kickstarter,Tech Companies,Tech Firm
+asyl,убежище,asylum
+civil war,Bürgerkrieg,гражданская война
+Flüchtlingshilfe,refugee relief
+US,U.S,USA,America,Америка,Amerika,США
+Syrien,Syria,Сирия,SYRIA
+ISIS,terrorist
+Russische,Russian,Russland
+interview,Vorstellungsgespräch,vorstellungsgespräch,bewerbungsgespräch,интервью
+challenges,проблемы,Herausforderungen,Herausforderung
+бьет,beats
+путин,putin,Putin
+беженцев,refugees,Refugees,Flüchtlinge
+убит,killed
+полицией,police,Police
+Problematik,problem
+begrüßt,hailed,welcomed
+Германия,Germany,Deutschland
+refugee,Flüchtling,беженцев
+krise,crisis,кризис
+bombed,bombardiert,fegen,bombardieren,разбомбленный
+ISIS,terrorist,terroristisch,террорист
+air force,luftwaffe,luftstreitkraft,luft kraft,воздушные силы
+force,kraft,gewalt,ewalt
+human rights,menschenrechte,права человека
+refugee,flüchtling,aussiedler,беженец
+Air strikes,Авиаудары
+general,General,Generäle,officers
+David Cameron,Prime Minister's,PM
+Umfragen,opinion
+Merkel,Merkel's,Merkel-Plan,#Merkel,Merkel
+тунисских,Tunisian,tunisian
+Vormarsch, steigen, продвижение, advance, climb
+Medvedev’s delegation,#Medwedew-Delegation
+coordinate,Koordinierung
+#Palestinian,Palestinian,#Aida Refugee Camp,#Bethlehem,#Aida refugee camp,Aida refugee camp
+refuse,verweigern 
+receive,Empfang
+Russian intervention syria, Russian intervention syria
+Dresden, дрезден
+12-year-old, 12 years old, 12 yr old, 12-Year-Old, 12-Years-Old
+assad, bashar assad, bashar al assad, bashar al-Assad, Assad, Bashar Assad, Bashar Al Assad, Bashar Al-Assad, Ассад, башар, башар Ассад
+обаму,obama
+бьет,beats,beat
+путин,putin,Putin
+беженцев,refugees,Refugees,Flüchtlinge
+убит,Kills,kill,killed,Killed,ISIS,funeral
+полицией,police,Police
+rights,berechtigungen,anrechte,права
+human,человеческий,menschlich,mensch
+
+
+#notice we use "gib" instead of "GiB" so any WordDelimiterFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima => pixma
